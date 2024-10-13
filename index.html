@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>♥ Quieres salir conmigo? ♥</title>
+  <style>
+    .body {
+      background-color: rgba(190, 20, 199, 0.995);
+      text-align: center;
+    }
+
+    .body__title {
+      color: white;
+    }
+
+    .body__img {
+      width: 100%;
+      max-width: 512px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <h1 class="body__title">♥ Quieres Salir conmigo? ♥</h1>
+  <img src="https://i.pinimg.com/736x/f6/0f/d9/f60fd94c9184e6f0019bbdc7587e43d4.jpg" alt="Foto D My" class="body__img" />
+  <br>
+  <button id="yes">❤️SI QUIERO❤️</button>
+  <button id="no">NO, TE ODIO Y ERES CACHUDO🤮</button>
+
+  <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const zomosNobios = () => {
+      alert('💞NOS VEMOS EL MARTES💞');
+      alert('SUJETO A CAMBIOS PQ NO TERMINE DE ENTENDER BIEN TU HORARIO JAJAJA TQM NAYI💜💜');
+      location.href = 'https://www.youtube.com/watch?v=1GS7wxWPaxc&t=43s';
+    };
+
+    const ebitarKCRompaMyBobo = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', zomosNobios);
+    vuttonNo.addEventListener('mouseover', ebitarKCRompaMyBobo);
+  </script>
+</body>
+
+</html>
